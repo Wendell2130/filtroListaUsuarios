@@ -11,7 +11,12 @@ import { UsersList } from './data/user-list';
 })
 export class AppComponent {
   title = 'users-filter-project';
-  
- userSelected:IUser=UsersList[2];
+  showDetails=false;
+ userSelected:IUser=UsersList[0];
+ 
+ onUserSelected(userSelected:IUser){
+  this.userSelected=userSelected;
+  this.showDetails=true;
+ }
   
 }

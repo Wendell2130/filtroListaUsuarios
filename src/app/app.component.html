@@ -4,11 +4,14 @@
           <app-filter ></app-filter>
         </div>
         <div class="main-left-div"> <!-- conteúdo da div esquerda -->
-            <app-user-list></app-user-list>
+            <app-user-list (userSelected)="onUserSelected($event)"></app-user-list>
         </div>
     </div>
     <div class="right-div"> <!-- conteúdo da div direita -->
-        <app-user-details [user]="userSelected"></app-user-details>
+        <app-user-details [user]="userSelected"
+        *ngIf="showDetails"
+        >
+        </app-user-details>
     </div>
     
 
