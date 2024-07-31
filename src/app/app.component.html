@@ -1,14 +1,14 @@
 <div class="container">
     <div class="left-container">
         <div class="top-div">   <!-- conteúdo da div superior -->
-          
+          <app-filter ></app-filter>
         </div>
         <div class="main-left-div"> <!-- conteúdo da div esquerda -->
-            
+            <app-user-list></app-user-list>
         </div>
     </div>
     <div class="right-div"> <!-- conteúdo da div direita -->
-        <app-user-details></app-user-details>
+        <app-user-details [user]="userSelected"></app-user-details>
     </div>
     
 

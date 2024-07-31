@@ -6,38 +6,38 @@
         <mat-divider></mat-divider>
         <mat-list-item>
             <span class="mat-headline-small">Nome: </span>
-            <span class="mat-headline-small">Fulano da silva</span></mat-list-item>
+            <span class="mat-headline-small">{{user.nome}}</span></mat-list-item>
         <mat-divider></mat-divider>
 
         <mat-list-item>
             <span class="mat-headline-small">Email: </span>
-            <span class="mat-headline-small">joãosilva&#64;exemp.com</span>
+            <span class="mat-headline-small">{{user.email}}</span>
         </mat-list-item>
         <mat-divider></mat-divider>
 
         <mat-list-item>
             <span class="mat-headline-small">Telefone: </span>
-            <span class="mat-headline-small">(11) 91234-5678</span></mat-list-item>
+            <span class="mat-headline-small">{{user.telefone | phone}}</span></mat-list-item>
         <mat-divider></mat-divider>
 
         <mat-list-item>
             <span class="mat-headline-small">Endereço: </span>
-            <span class="mat-headline-small">Rua de Tal, num 11,São Paulo</span></mat-list-item>
+            <span class="mat-headline-small">{{user.endereco.rua}},{{user.endereco.numero}},{{user.endereco.estado}}</span></mat-list-item>
         <mat-divider></mat-divider>
 
         <mat-list-item>
-            <span class="mat-headline-small">Ativo: </span>
-            <span class="mat-headline-small">Não</span></mat-list-item>
+            <span class="mat-headline-small">Status: </span>
+            <span class="mat-headline-small">{{user.ativo}}</span></mat-list-item>
         <mat-divider></mat-divider>
 
         <mat-list-item>
             <span class="mat-headline-small">Função: </span>
-            <span class="mat-headline-small">Desemvolvedor</span></mat-list-item>
+            <span class="mat-headline-small">{{user.funcao}}</span></mat-list-item>
         <mat-divider></mat-divider>
 
         <mat-list-item>
             <span class="mat-headline-small">Data de Cadastro: </span>
-            <span class="mat-headline-small">20/08/2023</span></mat-list-item>
+            <span class="mat-headline-small">{{user.dataCadastro}}</span></mat-list-item>
         <mat-divider></mat-divider>
 
     </mat-list>

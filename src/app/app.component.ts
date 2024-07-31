@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { IUser } from './interfaces/user/user.interface';
+import { UsersList } from './data/user-list';
 
 
 @Component({
@@ -9,4 +11,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'users-filter-project';
+  
+ userSelected:IUser=UsersList[2];
+  
 }
