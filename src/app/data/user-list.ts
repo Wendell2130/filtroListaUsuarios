@@ -1,7 +1,7 @@
 import { IUser } from "../interfaces/user/user.interface";
 
 
-export const UsersList: IUser[] = [
+export const USERS_LIST_DATA: IUser[] = [
     {
        
         nome: "João Silva",
